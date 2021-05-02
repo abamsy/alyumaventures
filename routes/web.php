@@ -41,8 +41,8 @@ Route::group(['middleware' => [
 
     Route::get('/waybill/{id}', function ($id) {
         $waybill = Waybill::find($id);
-        $pdf = PDF::loadView('waybill', ['waybill' => $waybill]);
-        return $pdf->stream('waybill.pdf');
+        PDF::loadView('waybill', ['waybill' => $waybill]);
+        //return $pdf->stream('waybill.pdf');
     })->name('waybill');
 
     Route::get('/share/{id}', function ($id) {
