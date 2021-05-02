@@ -75,9 +75,7 @@
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                             Quantity
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Status
-                        </th>
+                       
                         <th scope="col" class="relative px-6 py-3">
                             <span class="sr-only">Edit</span>
                         </th>
@@ -122,17 +120,7 @@
                             </div>
                         </td>
 
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            @if ($allocation->quantity == $allocation->shares()->sum('quantity'))
-                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                            Completed
-                            </span>
-                            @else
-                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                            Not completed
-                            </span>
-                            @endif
-                        </td>
+                       
                         
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             <a href="{{ route('ashares', [$allocation->id]) }}" class="text-yellow-400 hover:text-yellow-600">View</a>

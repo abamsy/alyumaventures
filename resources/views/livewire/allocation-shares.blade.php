@@ -122,11 +122,7 @@
                             <div class="text-sm font-medium text-gray-900">
                                 {{ $share->plant->name }}
                                 </div>
-                                <div class="text-sm text-gray-500">
-                                {{ $share->plant->address }}
-                                </div>
-                                <div class="text-sm text-gray-500">
-                                {{ $share->plant->city }}, {{ $share->plant->state }}
+                               {{ $share->plant->state }}
                                 </div>
                             </div>
                             </div>
