@@ -35,13 +35,18 @@
     </head>
     <body> 
         
+
+    <br\>
+        <br\>
+        <br\>
+        <br\>
+        <br\>
+        <br\>
+
         <!--<div>
             <img src = "https://alyumaventures.s3.us-east-2.amazonaws.com/AL-YUMA+LOGO.png" alt="" style="height:2.8cm; padding-left:1cm;">
             <img src = "https://alyumaventures.s3.us-east-2.amazonaws.com/COAT_OF_ARMS.png" alt="" style="width:3cm; margin-bottom:0.3cm; padding-left:1cm;">
         </div>-->
-
-        <br\>
-        <br\>
            
         <h2 style="text-align: center; margin-top:0cm; margin-right:1cm; color:green;  font-family: Arial, Helvetica, sans-serif; font-weight: bold;">PRESIDENTIAL FERTILIZER INITIATIVE {{ ( Carbon\Carbon::parse($waybill->share->allocation->date)->format('Y')) }}</h2>
 
