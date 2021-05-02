@@ -58,7 +58,7 @@
         </div>
 
         <div style="margin-top:-1cm; margin-bottom:1.5cm;">
-        <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-left:12.5cm;">Driver Phone Number{{ $waybill->phone }}</span><br\></h4>
+        <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-left:11cm;">Driver Phone Number{{ $waybill->phone }}</span><br\></h4>
         </div>
 
         <br\>
