@@ -170,7 +170,7 @@ class ShareWaybills extends Component
     {
         return view('livewire.share-waybills', [
             'share' => $this->share,
-            'waybills' => Waybill::where('share_id', $this->share->id)->paginate(10)
+            'waybills' => Waybill::where('share_id', $this->share->id)->get()
         ]);
     }
 }
