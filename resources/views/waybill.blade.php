@@ -40,7 +40,7 @@
             <img src = "storage/COAT_OF_ARMS.png" alt="" style="width:3cm; margin-bottom:0.3cm; padding-left:1cm;">
         </div>
            
-        <h2 style="text-align: center; margin-top:0cm; margin-right:1cm; color:green;  font-family: Arial, Helvetica, sans-serif; font-weight: bold;">PRESIDENTIAL FERTILIZER INITIATIVE 2020</h2>
+        <h2 style="text-align: center; margin-top:0cm; margin-right:1cm; color:green;  font-family: Arial, Helvetica, sans-serif; font-weight: bold;">PRESIDENTIAL FERTILIZER INITIATIVE {{ ( Carbon\Carbon::parse($waybill->date)->format('Y')) }}</h2>
 
         <div style="text-align: center; margin-left:1.5cm; background-color:gainsboro; margin-right:2.4cm; margin-top:-1cm;">
             <h3 style="color:firebrick;  font-family: Arial, Helvetica, sans-serif;">WAYBILL #{{ str_pad($waybill->id,6,'0',STR_PAD_LEFT) }}</h3>
@@ -53,8 +53,12 @@
         
 
         <div style="margin-left:1.9cm; margin-top:0.5cm;">
-            <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-right:0.2cm;">From:</span><span style="padding-left:0.5cm;">Onne Port</span><br\><span style="padding-left:1.9cm;">Port Harcourt</span><br\><span style="padding-left:1.9cm;">Rivers State</span></h4>
-            <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-right:0.2cm; margin-left:0.5cm;">To:</span><span style="padding-left:0.5cm;">{{ $waybill->share->plant->name }}</span><br\><span style="padding-left:1.9cm;"></span><br\><span style="padding-left:1.9cm;">{{ $waybill->share->plant->state }}</span></h4>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-right:0.2cm;">From:</span><span style="padding-left:0.5cm;">FOT Onne</span><br\><span style="padding-left:1.9cm;">Port Harcourt, Rivers State</span></h4>
+            <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-right:0.2cm; margin-left:0.5cm;">To:</span><span style="padding-left:0.5cm;">{{ $waybill->share->plant->name }}</span><br\><span style="padding-left:1.9cm;">{{ $waybill->share->plant->state }} State</span></h4>
+        </div>
+
+        <div style="margin-top:-1cm; margin-bottom:1.5cm;">
+        <h4 style="font-family: Arial, Helvetica, sans-serif;"><span style="padding-left:12.5cm;">Driver Phone Number{{ $waybill->phone }}</span><br\></h4>
         </div>
 
         <br\>

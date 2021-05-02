@@ -66,7 +66,7 @@
                         @error('bags') <span class="text-xs text-red-600">{{ $message }} </span> @enderror
                     </div>
                     <div class="mt-4">
-                        <x-jet-label for="driver" value="{{ __('Driver') }}" />
+                        <x-jet-label for="driver" value="{{ __('Truck Agent') }}" />
                         <x-jet-input id="driver" class="block mt-1 w-full" type="text" wire:model.debounce.800ms="driver" />
                         @error('driver') <span class="text-xs text-red-600">{{ $message }} </span> @enderror
                     </div>
@@ -113,10 +113,10 @@
                             Date
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Driver
+                            Truck Agent/Driver Phone
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Status
+                            Truck Number
                         </th>
                         <th scope="col" class="relative px-6 py-3">
                             <span class="sr-only">Edit</span>
@@ -163,9 +163,15 @@
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap">
-                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                            Active
-                            </span>
+                            <div class="flex items-center">
+                            
+                            <div >
+                                <div class="text-sm font-medium text-gray-900">
+                                {{ $waybill->truck }}
+                                </div>
+                                
+                            </div>
+                            </div>
                         </td>
                         
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
