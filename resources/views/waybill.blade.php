@@ -36,8 +36,8 @@
     <body> 
         
         <div>
-            <img src = "public/AL-YUMA LOGO.png" alt="" style="height:2.8cm; padding-left:1cm;">
-            <img src = "public/COAT_OF_ARMS.png" alt="" style="width:3cm; margin-bottom:0.3cm; padding-left:1cm;">
+            <img src = "storage/AL-YUMA LOGO.png" alt="" style="height:2.8cm; padding-left:1cm;">
+            <img src = "storage/COAT_OF_ARMS.png" alt="" style="width:3cm; margin-bottom:0.3cm; padding-left:1cm;">
         </div>
            
         <h2 style="text-align: center; margin-top:0cm; margin-right:1cm; color:green;  font-family: Arial, Helvetica, sans-serif; font-weight: bold;">PRESIDENTIAL FERTILIZER INITIATIVE {{ ( Carbon\Carbon::parse($waybill->share->allocation->date)->format('Y')) }}</h2>
