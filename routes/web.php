@@ -51,7 +51,7 @@ Route::group(['middleware' => [
         $balance =  $share->quantity - $sum;
         $waybills = $share->waybills()->get();
         $pdf = PDF::loadView('share', ['share' => $share, 'waybills' => $waybills, 'sum' => $sum, 'balance' => $balance]);
-        return $pdf->download('share.pdf');
+        return $pdf->stream('share.pdf');
     })->name('share');
 });
 
