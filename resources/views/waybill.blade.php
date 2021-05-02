@@ -40,7 +40,7 @@
             <img src = "storage/COAT_OF_ARMS.png" alt="" style="width:3cm; margin-bottom:0.3cm; padding-left:1cm;">
         </div>
            
-        <h2 style="text-align: center; margin-top:0cm; margin-right:1cm; color:green;  font-family: Arial, Helvetica, sans-serif; font-weight: bold;">PRESIDENTIAL FERTILIZER INITIATIVE {{ ( Carbon\Carbon::parse($waybill->date)->format('Y')) }}</h2>
+        <h2 style="text-align: center; margin-top:0cm; margin-right:1cm; color:green;  font-family: Arial, Helvetica, sans-serif; font-weight: bold;">PRESIDENTIAL FERTILIZER INITIATIVE {{ ( Carbon\Carbon::parse($waybill->share->allocation->date)->format('Y')) }}</h2>
 
         <div style="text-align: center; margin-left:1.5cm; background-color:gainsboro; margin-right:2.4cm; margin-top:-1cm;">
             <h3 style="color:firebrick;  font-family: Arial, Helvetica, sans-serif;">WAYBILL #{{ str_pad($waybill->id,6,'0',STR_PAD_LEFT) }}</h3>
